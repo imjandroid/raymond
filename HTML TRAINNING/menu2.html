@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<STYLE>
+.mainmenu{
+background-color:blue;
+color:white;
+}
+li{
+    position: relative;
+    display: inline-block;
+	list-style-type:none;
+	color: green;
+	padding:15px 20px;
+}
+.submenu{
+display: none;
+}
+
+.submenu {
+
+    position: absolute;
+    background-color: #f9f9f9;
+ margin:0;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+}
+.menu1{
+background-color:blue;
+color:white;
+}
+.menu1:hover .submenu {
+porition:absolute;
+display:block;
+}
+
+.submenu .a {
+    color: black;
+ 
+    text-decoration: none;
+    display: block;
+}
+.submenu .a:hover {background-color: #f1f1f1}
+</STYLE>
+
+
+
+
+<BODY>
+	
+<div>
+
+<ul>
+	<li class="menu1">
+	Home
+			<ul class="submenu">
+				<li class="a" >
+				sub1
+				</li>
+				<li class="a" >
+				sub2
+				</li>
+				<li class="a" >
+				sub3
+				</li>
+				<li class="a" >
+				sub4
+				</li>
+			</ul>
+	</li class= "mainmenu">
+
+	<li class= "mainmenu">
+	HOme2
+	</li>
+
+	<li class= "mainmenu">
+	HOme2
+	</li>
+	<li class= "mainmenu">
+	HOme2
+	</li>
+</ul>
+
+
+</div>
+
+</BODY>
+</HTML>

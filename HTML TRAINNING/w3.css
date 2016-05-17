@@ -1,0 +1,17 @@
+.w3-container:after,.w3-row:after,.w3-row-padding:after,.w3-topnav:after,.w3-clear:after,.w3-btn-group:before,.w3-btn-group:after
+{content:"";display:table;clear:both}
+.w3-tooltip,.w3-display-container{position:relative}
+.w3-left{float:left!important}.w3-right{float:right!important}
+.w3-section{margin-top:16px!important;margin-bottom:16px!important}
+.w3-large{font-size:18px!important}
+.w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
+.w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
+.w3-padding-left{padding-left:16px!important}.w3-padding-right{padding-right:16px!important}
+.w3-text-khaki,.w3-hover-text-khaki:hover{color:#b4aa50!important}
+.w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
+.w3-padding-left{padding-left:16px!important}.w3-padding-right{padding-right:16px!important}
+.w3-badge,.w3-tag,.w3-sign{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
+.w3-border-0{border:0!important}
+.w3-transparent{background-color:transparent!important}
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-border-amber,.w3-hover-border-amber:hover{border-color:#ffc107!important}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+.third
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+	font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: none;
+	background:blue;
+}
+
+.third > li
+{
+    height: 60px;
+    background: #green;
+}
+.third > li:hover { background: #CCCCCC; }
+
+
+
+
+
+
+
+
+.second
+{
+    position: absolute;
+     height: 60px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+		font-size: 20px;
+}
+
+.second > li
+{
+    position: relative;
+   height: 60px;
+    background:green;
+}
+.second > li:hover { background: #CCCCCC; }
+
+
+
+
+
+
+
+.first
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	font-size: 20px;
+}
+
+.first > li
+{
+    position: relative;
+    float: left;
+   height: 60px;
+    width: 150px;
+    background: #999999;
+}
+.first > li:hover { background: #CCCCCC; }
+
+.first li:hover > ul
+{
+  
+    display: inline;
+}
+
+.first a 
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color:yellow;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    display: block;
+    line-height: 60px;
+
+}
+.first a:hover { color: #000000; }
+
+
+</style>
+</head>
+<body>
+
+<ul class="first">
+   
+    <li>
+        <a href="#">menu 1</a>
+        <ul class="second">
+            <li><a href="#">sub menu</a>
+				 <ul class="third">
+                    <li><a href="#">child</a></li>
+                    <li><a href="#">child</a></li>
+                    <li><a href="#">child</a></li>
+                    <li><a href="#">child</a></li>
+                </ul>
+			</li>
+			
+            <li><a href="#">sub menu</a></li>
+            <li>
+                <a href="#">sub menu</a>
+                <ul class="third">
+                    <li><a href="#">child</a></li>
+                    <li><a href="#">child</a></li>
+                    <li><a href="#">child</a></li>
+                    <li><a href="#">child</a></li>
+                </ul>
+            </li>
+            <li><a href="#">sub menu</a></li>
+        </ul>
+    </li>
+    <li><a href="#">menu 1</a></li>
+	 <li><a href="#">menu 1</a></li>
+    <li><a href="#">menu 1</a></li>
+</ul>
+
+</body>
+</html>

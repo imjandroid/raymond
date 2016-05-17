@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Menu Bar</title>
+<Style>
+
+
+
+
+.menu{
+     list-style: none;
+    padding: 0;
+    margin: 0;
+	font-size: 20px;
+	
+}
+.menu > li
+{	display:inline;
+   float: left;
+    width: 150px;
+    position: relative;
+   height: 60px;
+    background:green;
+}
+
+.sub{
+      position: absolute;
+     height: 60px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+		font-size: 20px;
+}
+.sub > li
+{
+
+     position: relative;
+   height: 60px;
+    background:green;
+}
+.sub > li:hover { background: #CCCCCC; }
+
+.child{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+	font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: none;
+	background:blue;
+}
+
+.child > li
+{
+    height: 60px;
+    background: #green;
+}
+.child > li:hover { background: #CCCCCC; }
+.menu > li:hover { background: #CCCCCC; }
+
+.menu  li:hover > ul
+{
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+
+    display: inline;
+}
+
+.menu  a 
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color:yellow;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    display: block;
+    line-height: 60px;
+
+}
+.main a:hover { color: #000000; }
+</Style>
+
+
+<body>
+
+
+
+
+<div>
+
+
+	<ul class ="menu">
+		<li > <a href="#"> Menu1</a></a>
+			<ul class ="sub">
+				<li > <a href= "#"> Sub Menu1 </a>
+						<ul  class ="child">
+							<li >  <a href="#">child 1</a></li>
+							<li >  <a href="#">child 2</a></li>
+							<li >  <a href="#">child 3</a></li>
+						</ul>
+				
+				</li>
+				<li>  <a href="#">Sub Menu2</a>
+						<ul class ="child">
+							<li >  <a href="#">child 1</a></li>
+							<li >  <a href="#">child 2</a></li>
+							<li >  <a href="#">child 3</a></li>
+						</ul>
+				</li>
+				<li>   <a href="#">Sub Menu3</a></li>
+				
+			
+			</ul>
+		
+		</li>
+		<li ><a href="#"> Menu2</a></li>
+		<li > <a href="#"> Menu3</a></li>
+	</ul>
+ 
+
+</div>
+
+</body>
+</html>
